@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Bo Peng
+	email = pb0928@gmail.com
+[alias]
+	hist = log --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
