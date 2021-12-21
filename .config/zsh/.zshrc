@@ -4,9 +4,15 @@ setopt no_list_ambiguous
 bindkey -v
 
 # Setting up Defaults
+export PATH=/opt/homebrew/bin:$PATH
+export TERM="xterm-256color"
+
 export EDITOR='nvim'
-export TERMINAL='alacritty'
-export BROWSER='chrome'
+export TERMINAL='iterm2'
+export BROWSER='safari'
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # Aliases
 alias vi='nvim'
@@ -14,8 +20,8 @@ alias vim='nvim'
 alias ls='ls -G'
 alias ll='ls -la'
 alias editvim='nvim ~/.config/nvim/init.vim'
-alias editbash='nvim ~/.zshrc'
-alias reset='source ~/.zprofile; clear'
+alias editbash='nvim ~/.config/zsh/.zshrc'
+alias reset='cd ~; clear; source ~/.config/zsh/.zprofile'
 
 # Prompt Settings
 PROMPT='%F{blue}%2~%f %B%F{cyan}∳%f%b '

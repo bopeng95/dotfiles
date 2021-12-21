@@ -1,12 +1,12 @@
 # Window Customizations
 window:
-  dimensions:
-    columns: 150
-    lines: 40
+  # dimensions:
+  #   columns: 100
+  #   lines: 40
   padding:
     x: 10
     y: 10
-  decorations: none
+  # decorations: none
 scrolling:
   history: 10000
   multiplier: 3
@@ -66,6 +66,7 @@ colors:
     text: '0xffffff'
     background: '0x505050'
     white: '0xffffff'
+    save_to_clipboard: true
 
 cursor:
   style: Block

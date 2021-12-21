@@ -1,1 +1,14 @@
 .DS_Store
+
+# zsh
+.config/zsh/*
+!.config/zsh/.zprofile
+!.config/zsh/.zshrc
+
+# alacritty
+.config/alacritty/*
+!.config/alacritty/alacritty.yml
+
+# nvim
+.config/nvim/*
+!.config/nvim/init.vim

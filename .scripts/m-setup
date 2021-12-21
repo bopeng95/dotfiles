@@ -1,1 +1,60 @@
 #!/usr/bin/env bash
+
+echo 'Mac Setup'
+
+# give priviledges
+sudo -v
+
+# move to home directory
+cd ~
+
+# reinstall xcode tools
+echo ' '
+echo 'Reinstalling xcode tools...'
+rm -rf /Library/Developer/CommandLineTools
+xcode-select --install
+
+# installing apps
+echo ' '
+echo 'Installing...'
+
+brew=(
+  neovim
+  nvm
+  git
+  tmux
+)
+cask=(
+  alacritty
+  spotify
+  iterm2
+  firefox
+  1password
+  discord
+  visual-studio-code
+)
+
+brew update
+brew upgrade
+
+# app intaller
+brew install ${brew[@]}
+# cask intaller
+brew install --cask ${cask[@]}
+
+echo ' '
+echo 'Brew Cleanup...'
+brew cleanup -s
+
+# sym link files
+ln -s ~/dotfiles/.config/zsh ~/.config/zsh
+ln -s ~/dotfiles/.config/alacritty ~/.config/alacritty
+ln -s ~/dotfiles/.config/nvim ~/.config/nvim
+
+ln -s ~/dotfiles/.bash_profile ~/.bash_profile
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/.zshenv ~/.zshenv
+
+echo 'Installation Complete'

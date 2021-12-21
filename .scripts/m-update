@@ -1,1 +1,16 @@
 #!/usr/bin/env bash
+echo 'List of Apps:'
+brew List
+
+echo ' '
+echo 'Updating Apps...'
+brew update
+brew upgrade
+brew upgrade --cask
+
+echo ' '
+echo 'Cleaning up...'
+brew cleanup -s
+
+echo ' '
+echo 'Update Complete'
