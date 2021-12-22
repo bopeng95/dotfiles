@@ -23,6 +23,11 @@ alias editvim='nvim ~/.config/nvim/init.vim'
 alias editbash='nvim ~/.config/zsh/.zshrc'
 alias reset='cd ~; clear; source ~/.config/zsh/.zprofile'
 
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push origin main'
+
 # Prompt Settings
 PROMPT='%F{blue}%2~%f %B%F{cyan}∳%f%b '
 export LSCOLORS=FxFxCxDxBxegedabagaced
