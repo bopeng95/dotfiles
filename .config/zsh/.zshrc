@@ -23,6 +23,7 @@ alias editvim='nvim ~/.config/nvim/init.vim'
 alias editbash='nvim ~/.config/zsh/.zshrc'
 alias reset='cd ~; clear; source ~/.config/zsh/.zprofile'
 
+alias gb='git branch -a'
 alias gs='git status'
 alias ga='git add .'
 alias gc='git commit -m'
