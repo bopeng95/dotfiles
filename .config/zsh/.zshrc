@@ -23,7 +23,7 @@ alias gb='git branch -a'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
-alias gp='git push origin'
+alias gp='git push'
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH

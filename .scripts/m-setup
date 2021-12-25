@@ -37,6 +37,9 @@ cask=(
 brew update
 brew upgrade
 
+mkdir -p ~/.nvm
+mkdir -p ~/.config
+
 # app intaller
 brew install ${brew[@]}
 # cask intaller
