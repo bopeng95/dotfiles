@@ -6,7 +6,7 @@ bindkey -v
 # Setting up Defaults
 export PATH=/opt/homebrew/bin:$PATH
 export TERM="xterm-256color"
-export HOMEBREW_NO_AUTO_UPDATE=1
+# export HOMEBREW_NO_AUTO_UPDATE=1
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
@@ -14,7 +14,6 @@ source $(brew --prefix nvm)/nvm.sh
 # Aliases
 alias vi='nvim'
 alias vim='nvim'
-alias ls='ls -G'
 alias ll='ls -la'
 alias editvim='nvim ~/.config/nvim/init.vim'
 alias editbash='nvim ~/.config/zsh/.zshrc'
@@ -23,7 +22,7 @@ alias reset='cd ~; clear; source $ZSH/oh-my-zsh.sh'
 alias gb='git branch -a'
 alias gs='git status'
 alias ga='git add'
-alias gc='git commit -m'
+alias gc='git commit'
 alias gp='git push origin'
 
 # If you come from bash you might have to change your $PATH.
