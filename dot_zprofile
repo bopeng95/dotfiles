@@ -1,0 +1,16 @@
+# Homebrew
+if [ -x "/opt/homebrew/bin/brew" ]; then
+    # For Apple Silicon Macs
+    export PATH="/opt/homebrew/bin:$PATH"
+fi
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+# Zoxide
+eval "$(zoxide init zsh)"
+
+# Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+eval "$(starship init zsh)"
+

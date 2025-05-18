@@ -1,0 +1,10 @@
+.DS_Store
+
+.private
+dot_private
+
+.gitconfig
+dot_gitconfig
+
+.env
+dot_env

@@ -1,0 +1,19 @@
+# custom
+alias editalias="cm edit --apply ~/.aliases"
+alias editzprofile="cm edit --apply ~/.zprofile"
+alias editzsh="cm edit --apply ~/.zshrc"
+alias editss="cm edit --apply ~/.config/starship/starship.toml"
+alias reset="source ~/.zshrc"
+
+# chezmoi
+alias cm="chezmoi"
+
+# eza
+alias ls="eza --all"
+alias lsl="eza -la"
+
+# nvim
+alias vim="nvim"
+
+# zioxide
+alias cd="z"
