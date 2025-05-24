@@ -17,7 +17,7 @@ style_root = 'fg:text'
 format = '[$user  ]($style)'
 
 [directory]
-style = 'fg:pink'
+style = 'fg:lavender'
 format = '[ $path ]($style)'
 truncation_length = 3
 truncation_symbol = '.../'
