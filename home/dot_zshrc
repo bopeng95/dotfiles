@@ -1,4 +1,6 @@
 export EDITOR="nvim"
+export EZA_CONFIG_DIR="$HOME/.config/eza/"
+export XDG_CONFIG_HOME="$HOME/.config/"
 
 # Load dotfiles:
 for file in ~/.{ohmyzsh,zprofile,aliases,private}; do

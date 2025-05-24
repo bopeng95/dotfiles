@@ -9,8 +9,8 @@ alias reset="source ~/.zshrc"
 alias cm="chezmoi"
 
 # eza
-alias ls="eza --all"
-alias lsl="eza -la"
+alias ls="eza -l --header --git --icons=always"
+alias lsa="eza -la --header --git --icons=always"
 
 # nvim
 alias vim="nvim"
