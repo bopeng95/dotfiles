@@ -5,6 +5,10 @@ alias editzsh="cm edit --apply ~/.zshrc"
 alias editss="cm edit --apply ~/.config/starship/starship.toml"
 alias reset="source ~/.zshrc"
 
+# brew
+alias bb="brew bundle"
+alias bbd="bb dump --force --describe"
+
 # chezmoi
 alias cm="chezmoi"
 
