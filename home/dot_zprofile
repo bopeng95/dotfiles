@@ -1,5 +1,6 @@
 # Homebrew
 export BREW_PREFIX="/opt/homebrew"
+export HOMEBREW_BUNDLE_FILE="~/homebrew/Brewfile"
 
 if [ -x "$BREW_PREFIX/bin/brew" ]; then
     # For Apple Silicon Macs
