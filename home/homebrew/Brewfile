@@ -46,10 +46,14 @@ cask "git-credential-manager"
 cask "iterm2"
 # Menu bar calendar
 cask "itsycal"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # System and utility switches
 cask "only-switch"
 # Music streaming service
 cask "spotify"
+# Video game digital distribution service
+cask "steam"
 # Mesh VPN based on WireGuard
 cask "tailscale"
 # Open-source code editor
