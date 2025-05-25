@@ -5,6 +5,9 @@ alias editzsh="cm edit --apply ~/.zshrc"
 alias editss="cm edit --apply ~/.config/starship/starship.toml"
 alias reset="source ~/.zshrc"
 
+# ssh
+alias add-to-keychain="ssh-add --apple-use-keychain"
+
 # brew
 alias bb="brew bundle"
 alias bbd="bb dump --force --describe"
