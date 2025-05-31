@@ -64,6 +64,8 @@ cask "steam"
 cask "tailscale"
 # Open-source code editor
 cask "visual-studio-code"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 # Wine wrapper, setup tool and launcher for FFXIV
 cask "xiv-on-mac"
 vscode "dbaeumer.vscode-eslint"
