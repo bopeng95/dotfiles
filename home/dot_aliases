@@ -3,6 +3,7 @@ alias editalias="cm edit --apply ~/.aliases"
 alias editzprofile="cm edit --apply ~/.zprofile"
 alias editzsh="cm edit --apply ~/.zshrc"
 alias editss="cm edit --apply ~/.config/starship/starship.toml"
+alias edittmux="cm edit --apply ~/.tmux.conf"
 alias reset="source ~/.zshrc"
 
 # ssh
