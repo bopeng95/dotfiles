@@ -1,0 +1,33 @@
+{
+  // linting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescriptreact"
+  ],
+  // neovim
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  // appearance
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": false,
+  "workbench.colorTheme": "Calmppuccin Nitro Cold Brew Pink",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 1,
+  "workbench.editor.showTabs": "single",
+  "editor.semanticHighlighting.enabled": true,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.tips.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "MonaspiceAr Nerd Font Mono"
+  // "editor.fontFamily": "JetBrainsMono Nerd Font Mono"
+}
+
