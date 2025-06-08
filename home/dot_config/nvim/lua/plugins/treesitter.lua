@@ -1,23 +1,27 @@
 return {
+  {
     "nvim-treesitter/nvim-treesitter",
+    event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
-    config = function()
-        local config = require("nvim-treesitter.configs")
-        config.setup({
-            auto_install = false,
-            ensure_installed = {
-                "bash",
-                "html",
-                "css",
-                "javascript",
-                "typescript",
-                "tsx",
-                "json",
-                "lua",
-                "vim",
-            },
-            highlight = { enable = true },
-            indent = { enable = false },
-        })
-    end
+    opts = {
+      highlight = { enable = true },
+      indent = { enable = true },
+      ensure_installed = {
+        "bash",
+        "html",
+        "css",
+        "javascript",
+        "typescript",
+        "tsx",
+        "json",
+        "lua",
+        "vim",
+      },
+    },
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    opts = {},
+  },
 }
+
