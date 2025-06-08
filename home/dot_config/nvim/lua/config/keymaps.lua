@@ -12,6 +12,10 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "moves lines up in visual 
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
+-- Replace the word cursor is on globally
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+    { desc = "Replace word cursor is on globally" })
+
 -- Copy filepath to the clipboard
 vim.keymap.set("n", "<leader>fp", function()
   local filePath = vim.fn.expand("%:~") -- Gets the file path relative to the home directory
