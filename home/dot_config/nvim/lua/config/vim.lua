@@ -1,5 +1,4 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.opt.termguicolors = true
 
 vim.opt.expandtab = true -- Convert tabs to spaces
 vim.opt.tabstop = 2 -- Amount to indent with << and >>
@@ -23,4 +22,11 @@ vim.opt.signcolumn = "yes"
 -- Configure how new splits should be opened
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
+-- backspace
+vim.opt.backspace = { "start", "eol", "indent" }
+
+-- clipboard
+vim.opt.clipboard:append("unnamedplus") --use system clipboard as default
+vim.opt.hlsearch = true
 

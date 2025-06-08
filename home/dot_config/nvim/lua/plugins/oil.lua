@@ -1,14 +1,31 @@
 return {
-    "stevearc/oil.nvim",
-    ---@module 'oil'
-    ---@type oil.SetupOpts
-    opts = {
-        view_options = {
-            show_hidden = true,
-        },
+  "stevearc/oil.nvim",
+  dependencies = {
+    { "echasnovski/mini.icons", lazy = false },
+  },
+  lazy = false,
+  opts = {
+    default_file_explorer = true,
+    keymaps = {
+      ["q"] = "actions.close",
     },
-    dependencies = {
-        { "echasnovski/mini.icons", lazy = false },
+    view_options = {
+      show_hidden = true,
     },
-    lazy = false,
+  },
+  keys = {
+    {
+      "-",
+      mode = "n",
+      function() require("oil").open() end,
+      desc = "Open parent directory"
+    },
+    {
+      "<leader>-",
+      mode = "n",
+      function() require("oil").open_float() end,
+      desc = "Open parent directory by floating"
+    },
+  },
 }
+
