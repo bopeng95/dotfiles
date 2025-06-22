@@ -23,3 +23,8 @@ vim.keymap.set("n", "<leader>fp", function()
   print("File path copied to clipboard: " .. filePath) -- Optional: print message to confirm
 end, { desc = "Copy file path to clipboard" })
 
+vim.keymap.set("n", "<leader>cf", function()
+  require("conform").format({
+    lsp_format = "fallback",
+  })
+end, { desc = "Format current file" })
