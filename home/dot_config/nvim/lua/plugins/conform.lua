@@ -3,6 +3,7 @@ return {
 	event = { "BufWritePre" },
 	opts = {
 		formatters_by_ft = {
+			["_"] = { "prettier" },
 			lua = { "stylua" },
 			-- Conform will run multiple formatters sequentially
 			-- python = { "isort", "black" },
