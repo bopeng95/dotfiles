@@ -3,7 +3,6 @@ return {
 	event = { "BufWritePre" },
 	opts = {
 		formatters_by_ft = {
-			["_"] = { "prettier" },
 			lua = { "stylua" },
 			-- Conform will run multiple formatters sequentially
 			-- python = { "isort", "black" },
@@ -12,6 +11,7 @@ return {
 			-- Conform will run the first available formatter
 			javascript = { "prettierd", "prettier", stop_after_first = true },
 			typescript = { "prettierd", "prettier", stop_after_first = true },
+			["_"] = { "prettier" },
 		},
 		format_on_save = {
 			-- These options will be passed to conform.format()
