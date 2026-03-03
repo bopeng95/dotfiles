@@ -9,6 +9,9 @@ alias reset="source ~/.zshrc"
 # ssh
 alias add-to-keychain="ssh-add --apple-use-keychain"
 
+# webserver
+alias webserver="ttyd -p 4200 -t fontSize=16 -W zsh"
+
 # brew
 alias bb="brew bundle"
 alias bbd="bb dump --force --describe"

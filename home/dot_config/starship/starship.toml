@@ -14,12 +14,13 @@ add_newline = false
 show_always = true
 style_user = 'fg:text'
 style_root = 'fg:text'
-format = '[$user  ]($style)'
+format = '[$user]($style)'
+# format = '[$user  ]($style)'
 
 [directory]
 style = 'fg:lavender'
 format = '[ $path ]($style)'
-truncation_length = 3
+truncation_length = 4
 truncation_symbol = '.../'
 
 [directory.substitutions]
