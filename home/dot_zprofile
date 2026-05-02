@@ -1,6 +1,7 @@
 # Homebrew
 export BREW_PREFIX="/opt/homebrew"
 export HOMEBREW_BUNDLE_FILE="~/homebrew/Brewfile"
+# export PATH=$PATH:$(go env GOPATH)/bin
 
 if [ -x "$BREW_PREFIX/bin/brew" ]; then
     # For Apple Silicon Macs
