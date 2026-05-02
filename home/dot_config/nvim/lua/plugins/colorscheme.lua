@@ -1,11 +1,23 @@
 return {
-  -- NOTE: catppuccin
+  -- NOTE: vague
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "vague-theme/vague.nvim",
+    name = "vague",
     priority = 1000,
-    opts = {
-      flavour = "mocha",
-    },
+    config = function()
+      vim.cmd.colorscheme("vague")
+    end,
   },
+  -- NOTE: catppuccin
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   priority = 1000,
+  --   opts = {
+  --     flavour = "mocha",
+  --   },
+  -- config = function()
+  --   vim.cmd.colorscheme("catppuccin")
+  -- end,
+  -- },
 }
