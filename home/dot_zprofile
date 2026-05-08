@@ -11,13 +11,13 @@ fi
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# Zoxide
-eval "$(zoxide init zsh)"
-
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
 
 # uv
 export PATH="/Users/bopeng/.local/bin:$PATH"
+
+# Zoxide
+eval "$(zoxide init zsh)"
 
