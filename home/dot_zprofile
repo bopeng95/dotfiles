@@ -13,7 +13,9 @@ source <(fzf --zsh)
 
 # Starship
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
-eval "$(starship init zsh)"
+if [[ $TERM != "dumb" ]]; then
+  eval "$(starship init zsh)"
+fi
 
 # uv
 export PATH="/Users/bopeng/.local/bin:$PATH"
