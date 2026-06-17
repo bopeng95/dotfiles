@@ -15,6 +15,7 @@ alias webserver="ttyd -p 4200 -t fontSize=16 -W zsh"
 # brew
 alias bb="brew bundle"
 alias bbd="bb dump --force --describe"
+alias bbb="brew update && brew upgrade && brew cleanup"
 
 # chezmoi
 alias cm="chezmoi"
