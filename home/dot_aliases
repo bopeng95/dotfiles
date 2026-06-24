@@ -6,6 +6,9 @@ alias editss="cm edit --apply ~/.config/starship/starship.toml"
 alias edittmux="cm edit --apply ~/.tmux.conf"
 alias reset="source ~/.zshrc"
 
+# claude
+alias cc="claude --dangerously-skip-permissions"
+
 # ssh
 alias addssh="ssh-add --apple-use-keychain"
 
