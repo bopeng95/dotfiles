@@ -40,3 +40,5 @@ alias ta="tmux a -t"
 alias tl="tmux ls"
 alias tk="tmux kill-session -t"
 
+# herdr
+alias h="herdr"
