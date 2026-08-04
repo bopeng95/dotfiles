@@ -13,7 +13,7 @@ alias cc="claude --dangerously-skip-permissions"
 alias addssh="ssh-add --apple-use-keychain"
 
 # webserver
-alias webserver="ttyd -p 4200 -t fontSize=16 -W zsh"
+alias webserver="ttyd -p 4200 -t 'fontFamily=courier-new, courier, \"Symbols Nerd Font\", monospace' -t fontSize=16 -W zsh"
 
 # brew
 alias bb="brew bundle"
