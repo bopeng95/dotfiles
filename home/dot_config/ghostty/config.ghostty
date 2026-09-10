@@ -1,0 +1,12 @@
+theme = Catppuccin Mocha
+font-family = "MonaspiceAr Nerd Font"
+
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
+
+macos-titlebar-style = tabs
+
+keybind = global:alt+space=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-size = 100%,100%
