@@ -1,3 +1,23 @@
+local function nav(dir)
+  local pane = vim.env.HERDR_PANE_ID
+  if not pane or pane == "" then
+    return require("tmux-navigator").navigate(dir) -- tmux / plain splits
+  end
+
+  local wincmd = ({ left = "h", down = "j", up = "k", right = "l" })[dir]
+  local prev = vim.api.nvim_get_current_win()
+  vim.cmd("wincmd " .. wincmd)
+  if vim.api.nvim_get_current_win() ~= prev then
+    return
+  end
+
+  local herdr = vim.env.HERDR_BIN_PATH
+  if not herdr or herdr == "" then
+    herdr = "herdr"
+  end
+  vim.fn.system({ herdr, "pane", "focus", "--direction", dir, "--pane", pane })
+end
+
 return {
   "christoomey/vim-tmux-navigator",
   cmd = {
@@ -11,42 +31,35 @@ return {
     {
       "<c-h>",
       function()
-        require("tmux-navigator").navigate("left")
+        nav("left")
       end,
-      mode = { "n", "i", "v", "s" },
     },
     {
       "<c-j>",
       function()
-        require("tmux-navigator").navigate("down")
+        nav("down")
       end,
-      mode = { "n", "i", "v", "s" },
     },
     {
       "<c-k>",
       function()
-        require("tmux-navigator").navigate("up")
+        nav("up")
       end,
-      mode = { "n", "i", "v", "s" },
     },
     {
       "<c-l>",
       function()
-        require("tmux-navigator").navigate("right")
+        nav("right")
       end,
-      mode = { "n", "i", "v", "s" },
     },
     {
       "<c-\\>",
       function()
         require("tmux-navigator").navigate("previous")
       end,
-      mode = { "n", "i", "v", "s" },
     },
   },
-  config = function()
-    -- This is important to prevent Neovim's default keymaps from conflicting
-    -- with the tmux navigation keymaps when in a tmux session.
+  init = function()
     vim.g.tmux_navigator_no_mappings = 1
   end,
 }
