@@ -16,9 +16,9 @@ return {
   --   opts = {
   --     flavour = "mocha",
   --   },
-  -- config = function()
-  --   vim.cmd.colorscheme("catppuccin")
-  -- end,
+  --   config = function()
+  --     vim.cmd.colorscheme("catppuccin")
+  --   end,
   -- },
   -- NOTE:kanagawa
   -- {

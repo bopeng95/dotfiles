@@ -3,6 +3,19 @@ export BREW_PREFIX="/opt/homebrew"
 export HOMEBREW_BUNDLE_FILE="~/homebrew/Brewfile"
 export PATH="$PATH:$HOME/go/bin"
 
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git "
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
+export FZF_DEFAULT_OPTS="--height 50% --layout=default"
+
+# Setup fzf previews
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --icons=always --tree --color=always {} | head -200'"
+
+# fzf preview for tmux
+export FZF_TMUX_OPTS=" -p90%,70% "
+
 if [ -x "$BREW_PREFIX/bin/brew" ]; then
     # For Apple Silicon Macs
     export PATH="$BREW_PREFIX/bin:$PATH"
@@ -22,4 +35,3 @@ export PATH="/Users/bopeng/.local/bin:$PATH"
 
 # Zoxide
 eval "$(zoxide init zsh)"
-
